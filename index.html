@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosaic Contact Form</title>
+</head>
+<body>
 
+    <h1>Contact Our Team</h1>
+    <p>Please fill out the form below and we will get back to you within 4 hours.</p>
+
+    <form action="#" method="post">
+        
+        <fieldset>
+            <legend>Personal Information</legend>
+            
+            <p>
+                <label for="full-name">Full Name:</label><br>
+                <input type="text" id="full-name" name="full-name" placeholder="Bet Ebei" required>
+            </p>
+
+            <p>
+                <label for="user-email">Email Address:</label><br>
+                <input type="email" id="user-email" name="user-email" placeholder="email@example.com" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Inquiry Details</legend>
+
+            <p>
+                <label for="subject">Reason for Contact:</label><br>
+                <select id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="billing">Billing Question</option>
+                    <option value="other">Other</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="5" cols="30" placeholder="How can we help you?" required></textarea>
+            </p>
+        </fieldset>
+
+        <p>
+            <button type="submit">Send Message</button>
+            <button type="reset">Clear Form</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
